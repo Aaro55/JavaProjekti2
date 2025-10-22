@@ -7,7 +7,7 @@ public class Arvauspeli {
     String salaisuus = "Emma";
     String muuttuja;
     int yritys = 0;
-    
+
       while (true) {
             System.out.println("Guess my name (type stop to exit)");
             muuttuja = scanner.nextLine();
@@ -24,7 +24,8 @@ public class Arvauspeli {
                 break;
             }  
         }
-
+        System.out.println("You guessed " + yritys + " times.");
+        scanner.close();
 
     }
 }
