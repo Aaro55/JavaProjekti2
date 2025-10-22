@@ -7,6 +7,24 @@ public class Arvauspeli {
     String salaisuus = "Emma";
     String muuttuja;
     int yritys = 0;
+    
+      while (true) {
+            System.out.println("Guess my name (type stop to exit)");
+            muuttuja = scanner.nextLine();
+            
+
+            if (muuttuja.equalsIgnoreCase("stop")) {
+                
+                break;
+            }
+                yritys++;
+                
+            if (muuttuja.equalsIgnoreCase(salaisuus)) {
+                System.out.println("Congratulations!");
+                break;
+            }  
+        }
+
 
     }
 }
